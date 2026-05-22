@@ -211,4 +211,71 @@ footer{
     .hero-text p{
         font-size:1rem;
     }
+/* CONTACTO */
+
+.contact{
+    background:#eef3ff;
+    padding:80px 8%;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.contact-info h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#1f3c88;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 20px rgba(0,0,0,.1);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+.contact-form button{
+    background:#1f3c88;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#162447;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
 }
